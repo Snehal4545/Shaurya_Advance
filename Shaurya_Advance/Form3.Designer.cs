@@ -30,10 +30,10 @@ namespace Shaurya_Advance
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnBinaryRead = new System.Windows.Forms.Button();
             this.btnBinaryWrite = new System.Windows.Forms.Button();
@@ -54,19 +54,19 @@ namespace Shaurya_Advance
             this.label1.TabIndex = 0;
             this.label1.Text = "Product Id";
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.Location = new System.Drawing.Point(208, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtId.Location = new System.Drawing.Point(208, 24);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(170, 20);
+            this.txtId.TabIndex = 1;
             // 
-            // textBox2
+            // txtName
             // 
-            this.textBox2.Location = new System.Drawing.Point(208, 62);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(170, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtName.Location = new System.Drawing.Point(208, 62);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(170, 20);
+            this.txtName.TabIndex = 3;
             // 
             // label2
             // 
@@ -77,12 +77,12 @@ namespace Shaurya_Advance
             this.label2.TabIndex = 2;
             this.label2.Text = "Product Name";
             // 
-            // textBox3
+            // txtPrice
             // 
-            this.textBox3.Location = new System.Drawing.Point(208, 88);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(170, 20);
-            this.textBox3.TabIndex = 5;
+            this.txtPrice.Location = new System.Drawing.Point(208, 88);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(170, 20);
+            this.txtPrice.TabIndex = 5;
             // 
             // label3
             // 
@@ -101,6 +101,7 @@ namespace Shaurya_Advance
             this.btnBinaryRead.TabIndex = 6;
             this.btnBinaryRead.Text = "Binary Read";
             this.btnBinaryRead.UseVisualStyleBackColor = true;
+            this.btnBinaryRead.Click += new System.EventHandler(this.btnBinaryRead_Click);
             // 
             // btnBinaryWrite
             // 
@@ -110,6 +111,7 @@ namespace Shaurya_Advance
             this.btnBinaryWrite.TabIndex = 7;
             this.btnBinaryWrite.Text = "Binary Write";
             this.btnBinaryWrite.UseVisualStyleBackColor = true;
+            this.btnBinaryWrite.Click += new System.EventHandler(this.btnBinaryWrite_Click);
             // 
             // btnXmlWrite
             // 
@@ -178,11 +180,11 @@ namespace Shaurya_Advance
             this.Controls.Add(this.btnXmlWrite);
             this.Controls.Add(this.btnBinaryWrite);
             this.Controls.Add(this.btnBinaryRead);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.label1);
             this.Name = "Form3";
             this.Text = "Form3";
@@ -195,10 +197,10 @@ namespace Shaurya_Advance
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnBinaryRead;
         private System.Windows.Forms.Button btnBinaryWrite;
